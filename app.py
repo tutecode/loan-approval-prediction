@@ -34,6 +34,7 @@ def ValuePredictor(data = pd.DataFrame):
 	loaded_model = joblib.load(open(model_dir, 'rb'))
 	# Predict the data
 	result = loaded_model.predict(data)
+	
 	return result[0]
 
 # Home page
