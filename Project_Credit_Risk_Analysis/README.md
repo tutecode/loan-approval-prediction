@@ -4,6 +4,11 @@
 
 Terminal WSL:
 
+    - Install `pipenv` unsing `pip` > `pip3 install pipenv`
+    - Activate VirtualEnv > `python3 -m pipenv shell`
+        - Deactivate > `exit`
+    - Install from `pipfile` or `requirements.txt` > `pipenv install`
+
 1. Activate VENV in loan-approval-prediction > pipenv shell
 2. Move to Project_Credit_Risk_Anaylsis > cd Project_Credit_Risk_Anaylsis
 3. Run Flask app > flask run
