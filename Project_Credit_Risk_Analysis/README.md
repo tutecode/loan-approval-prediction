@@ -2,7 +2,12 @@
 
 # Activate with
 
-1. pipenv shell
+Terminal WSL:
+
+1. Activate VENV in loan-approval-prediction > pipenv shell
+2. Move to Project_Credit_Risk_Anaylsis > cd Project_Credit_Risk_Anaylsis
+3. Run Flask app > flask run
+    - Open http://127.0.0.1:5000
 
 ### Content
 A loan application is used by borrowers to apply for a loan. Through the loan application, borrowers reveal key details about their finances to the lender. The loan application is crucial to determining whether the lender will grant the request for funds or credit.
