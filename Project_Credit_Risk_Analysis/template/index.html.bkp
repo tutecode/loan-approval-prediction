@@ -28,49 +28,21 @@
                             <!-- Name -->
                             <div class="form-group">
                                 <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
-                                <input type="text" name="name" id="name" placeholder="Your Name" required>
+                                <input type="text" name="name" id="name" placeholder="Your Name" required/>
                             </div>
                             <!-- Birthdate -->
                             <div class="form-group">
                                 <label for="birthdate"><i class="zmdi zmdi-calendar"></i></label>
-                                <input type="date" name="birthdate" id="birthdate" placeholder="Your Birthdate" required>
+                                <input type="date" name="birthdate" id="birthdate" placeholder="Your Birthdate" required/>
                             </div>
                             <!-- APPLICATION_SUBMISSION_TYPE / CATEGORICAL -->
                             <div class="form-group">
-                                <label for="application_submission_type_web"><i class="zmdi zmdi-home"></i></label>
-                                <select name="application_submission_type_web" id="application_submission_type_web" required>
-                                    <option value="" disabled selected>Your application submission type</option>
-                                    <option value="Web">Web</option>
-                                </select>
-                            </div>
-                            <!-- RESIDENCIAL_STATE / CATEGORICAL -->
-                            <div class="form-group">
-                                <label for="residencial_state"><i class="zmdi zmdi-home"></i></label>
-                                <select name="residencial_state" id="residencial_state" required>
-                                    <option value="" disabled selected>Your residencial state</option>
-                                    <option value="Otros">Otros</option>
-                                    <option value="AC">AC</option>
-                                    <!-- More options for other states -->
-                                </select>
-                            </div>
-                            <!-- MARITAL_STATUS / CATEGORICAL -->
-                            <div class="form-group">
-                                <label for="marital_status"><i class="zmdi zmdi-home"></i></label>
-                                <select name="marital_status" id="marital_status" required>
+                                <label for="application_submission_type"><i class="zmdi zmdi-home"></i></label>
+                                <select name="application_submission_type" id="application_submission_type" placeholder="Submission type" required>
                                     <option value="" disabled selected>Your marital status</option>
-                                    <option value="other">other</option>
-                                    <option value="single">single</option>
-                                    <!-- More options for other marital statuses -->
-                                </select>
-                            </div>
-                            <!-- QUANT_DEPENDANTS -->
-                            <div class="form-group">
-                                <label for="quant_dependants"><i class="zmdi zmdi-home"></i></label>
-                                <select name="quant_dependants" id="quant_dependants" placeholder="Number of Dependents" required>
-                                    <option value="" disabled selected>Number of Dependents</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="+3">+3</option>
+                                    <option value="Other">Other</option>
+                                    <option value="Carga">Carga</option>
+                                    <option value="Web">Web</option>
                                 </select>
                             </div>
                             <!-- RESIDENCIAL_STATE / CATEGORICAL -->
@@ -78,6 +50,7 @@
                                 <label for="residencial_state"><i class="zmdi zmdi-home"></i></label>
                                 <select name="residencial_state" id="residencial_state" placeholder="Your residencial state" required>
                                     <option value="" disabled selected>Your residencial state</option>
+                                    <option value="Otros">Otros</option>
                                     <option value="AC">AC</option>
                                     <option value="AL">AL</option>
                                     <option value="AM">AM</option>
@@ -106,42 +79,44 @@
                                     <option value="TO">TO</option>
                                 </select>
                             </div>
-                            <!-- MONTHS_IN_RESIDENCE -->
+                            <!-- MARITAL_STATUS / CATEGORICAL -->
                             <div class="form-group">
-                                <label for="months_in_residence"><i class="zmdi zmdi-home"></i></label>
-                                <select name="months_in_residence" id="months_in_residence" placeholder="Months in residence" required>
-                                    <option value="" disabled selected>Months in residence</option>
-                                    <option value="6_12">6_12</option>
-                                    <option value=">_12">>_12</option>
+                                <label for="marital_status"><i class="zmdi zmdi-home"></i></label>
+                                <select name="marital_status" id="marital_status" placeholder="Your marital status" required>
+                                    <option value="" disabled selected>Your marital status</option>
+                                    <option value="Other">Other</option>
+                                    <option value="married">married</option>
+                                    <option value="single">single</option>
                                 </select>
-                            </div>
-                            <div class="form-group">
-                                <label for="months_in_residence"><i class="zmdi zmdi-money"></i></label>
-                                <input type="number" min="0" name="months_in_residence" placeholder="Months in residence" required/>
                             </div>
                             <!-- RESIDENCE_TYPE / CATEGORICAL -->
                             <div class="form-group">
                                 <label for="residence_type"><i class="zmdi zmdi-home"></i></label>
-                                <select name="residence_type" id="residence_type" required>
+                                <select name="residence_type" id="residence_type" placeholder="Your residence type" required>
                                     <option value="" disabled selected>Your residence type</option>
                                     <option value="other">other</option>
                                     <option value="mortgage">mortgage</option>
-                                    <!-- More options for other residence types -->
+                                    <option value="owned">owned</option>
+                                    <option value="owned">parents</option>
+                                    <option value="owned">rented</option>
                                 </select>
                             </div>
                             <!-- MONTHLY_INCOMES_TOT / CATEGORICAL -->
                             <div class="form-group">
                                 <label for="monthly_income_tot"><i class="zmdi zmdi-home"></i></label>
-                                <select name="monthly_income_tot" id="monthly_income_tot" required>
+                                <select name="monthly_income_tot" id="monthly_income_tot" placeholder="Your monthly income total" required>
                                     <option value="" disabled selected>Your monthly income total</option>
                                     <option value="[0-650]">[0-650]</option>
-                                    <!-- More options for other income ranges -->
+                                    <option value="[650-1320]">[650-1320]</option>
+                                    <option value="[1320-3323]">[1320-3323]</option>
+                                    <option value="[3323-8560]">[3323-8560]</option>
+                                    <option value="[>:8560]">[>:8560]</option>
                                 </select>
                             </div>
                             <!-- SEX -->
                             <div class="form-group">
                                 <label for="sex"><i class="zmdi zmdi-accounts"></i></label>
-                                <select name="sex" id="sex" required>
+                                <select name="sex" id="sex" placeholder="Your sex" required>
                                     <option value="" disabled selected>Your sex</option>
                                     <option value="1">Male</option>
                                     <option value="0">Female</option>
@@ -150,25 +125,82 @@
                             <!-- FLAG_RESIDENCIAL_PHONE -->
                             <div class="form-group">
                                 <label for="flag_residencial_phone"><i class="zmdi zmdi-accounts"></i></label>
-                                <select name="flag_residencial_phone" id="flag_residencial_phone" required>
+                                <select name="flag_residencial_phone" id="flag_residencial_phone" placeholder="Possesses a home phone?" required>
                                     <option value="" disabled selected>Possesses a home phone?</option>
                                     <option value="1">Yes</option>
                                     <option value="0">No</option>
                                 </select>
+                            </div>
+                            <!-- FLAG_PROFESSIONAL_PHONE -->
+                            <div class="form-group">
+                                <label for="flag_professional_phone"><i class="zmdi zmdi-accounts"></i></label>
+                                <select name="flag_professional_phone" id="flag_professional_phone" placeholder="Possesses a proffesional phone?" required>
+                                    <option value="" disabled selected>Possesses a proffesional phone?</option>
+                                    <option value="1">Yes</option>
+                                    <option value="0">No</option>
+                                </select>
+                            </div>
+                            <!-- COMPANY -->
+                            <div class="form-group">
+                                <label for="company"><i class="zmdi zmdi-accounts"></i></label>
+                                <select name="company" id="company" placeholder="Works in a company?" required>
+                                    <option value="" disabled selected>Works in a company?</option>
+                                    <option value="1">Yes</option>
+                                    <option value="0">No</option>
+                                </select>
+                            </div>
+                            <!-- PAYMENT_DAY -->
+                            <div class="form-group">
+                                <label for="payment_day"><i class="zmdi zmdi-money"></i></label>
+                                <input type="number" min="0" name="payment_day" placeholder="Your payment day" required/>
+                            </div>
+                            <!-- NACIONALITY -->
+                            <div class="form-group">
+                                <label for="nacionality"><i class="zmdi zmdi-money"></i></label>
+                                <input type="number" min="0" name="nacionality" placeholder="Your nacionality (1=Brazil)" required/>
+                            </div>
+                            <!-- FLAG_CARDS -->
+                            <div class="form-group">
+                                <label for="flag_cards"><i class="zmdi zmdi-accounts"></i></label>
+                                <select name="flag_cards" id="flag_cards" placeholder="You are a credit card holder?" required>
+                                    <option value="" disabled selected>You are a credit card holder?</option>
+                                    <option value="1">Yes</option>
+                                    <option value="0">No</option>
+                                </select>
+                            </div>
+                            <!-- QUANT_BANKING_ACCOUNTS_TOT -->
+                            <div class="form-group">
+                                <label for="quant_banking_accounts_tot"><i class="zmdi zmdi-money"></i></label>
+                                <input type="number" min="0" name="quant_banking_accounts_tot" placeholder="Quant banking accounts" required/>
+                            </div>
+                            <!-- PERSONAL_ASSETS_VALUE -->
+                            <div class="form-group">
+                                <label for="personal_assets_value"><i class="zmdi zmdi-money"></i></label>
+                                <input type="number" min="0" name="personal_assets_value" placeholder="Personal assets value" required/>
+                            </div>
+                            <!-- QUANT_CARS -->
+                            <div class="form-group">
+                                <label for="quant_cars"><i class="zmdi zmdi-money"></i></label>
+                                <input type="number" min="0" name="quant_cars" placeholder="Quants cars" required/>
                             </div>
                             <!-- QUANT_DEPENDANTS -->
                             <div class="form-group">
                                 <label for="quant_dependants"><i class="zmdi zmdi-money"></i></label>
                                 <input type="number" min="0" name="quant_dependants" placeholder="Quants dependants" required/>
                             </div>
+                            <!-- MONTHS_IN_RESIDENCE -->
+                            <div class="form-group">
+                                <label for="months_in_residence"><i class="zmdi zmdi-money"></i></label>
+                                <input type="number" min="0" name="months_in_residence" placeholder="Months in residence" required/>
+                            </div>
                             <!-- Terms condition / checkbox -->
                             <div class="form-group">
-                                <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" required>
+                                <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" />
                                 <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree all statements in  <a href="#" class="term-service">Terms of service</a></label>
                             </div>
                             <!-- Submit / button -->
                             <div class="form-group form-button">
-                                <input type="submit" name="signup" id="signup" class="form-submit" value="Check Status">
+                                <input type="submit" name="signup" id="signup" class="form-submit" value="Check Status"/>
                             </div>
                         </form>
                     </div>
@@ -178,8 +210,6 @@
                 </div>
             </div>
         </section>
-    
     </div>
-
 </body>
 </html>
